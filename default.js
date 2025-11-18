@@ -214,7 +214,7 @@ function HandleCustomLink() {
         let endsecint = parseInt(wd[i]) * 86400 + parseInt(endh[i]) * 3600 + parseInt(endm[i]) * 60;
         backstr += (endsecint - startsecint);
 
-        document.getElementById('ccformout').innerHTML = "dein personalisierter Link: <button onclick='Select(\"" + backstr + "\"); clipboard(\"matdoh.de/counter/?ts=" + backstr + "\")'>in die Zwischenablage kopieren</button>.";
+        document.getElementById('ccformout').innerHTML = "dein personalisierter Link: <button onclick='Select(\"" + backstr + "\"); clipboard(\"" + window.location.href + "/counter/?ts=" + backstr + "\")'>in die Zwischenablage kopieren</button>.";
 
     }
 
